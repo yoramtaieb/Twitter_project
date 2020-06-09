@@ -1,0 +1,73 @@
+.formConnexion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.formCo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30% 0 30%;
+}
+
+.formCo input {
+    background-color: #192834;
+}
+
+.formCo label {
+    color: white;
+}
+
+.titleCo {
+    padding-bottom: 2%;
+    color: white;
+}
+
+.mdpLabel {
+    padding: 2% 0 1% 0;
+}
+
+.mailLabel {
+    padding: 2% 0 1% 0;
+}
+
+footer {
+    margin-top: 1%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1EA2F1;
+}
+
+.hoverFooter:hover {
+    text-decoration: underline;
+}
+
+.tiretFooter {
+    color: #1EA2F1;
+}
+
+.modale {
+    display: none;
+}
+
+.formModale {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30% 0 30%;
+}
+
+.containError {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 0 0;
+}
+
+.msgError {
+    width: 42%;
+    color: #E0255E;
+    text-align: left;
+}

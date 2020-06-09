@@ -1,0 +1,67 @@
+/* PARTIE HEADER PROFILE */
+
+.headerProfil {
+    display: flex;
+    color: white;
+    padding-bottom: 3%;
+}
+
+.headerProfil h3 {
+    padding: 1.5% 0 0 2%;
+    width: 100%;
+}
+
+.headerProfil .arrow {
+    cursor: pointer;
+    height: 20px;
+}
+
+.headerProfil a {
+    padding: 1.5% 0 0 2%;
+    width: 6%;
+}
+
+
+/* PARTIE BACKGROUND PROFIL */
+
+.backgroundProfil {
+    height: 30vh;
+    background-color: #3E5465;
+    position: relative;
+}
+
+
+/* PARTIE INFOS PROFIL */
+
+.infoProfil {
+    padding-top: 11%;
+    border-bottom: 10px solid #253441;
+}
+
+.imgProf {
+    height: 20vh;
+    border-radius: 100px;
+    border: 4px solid black;
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+}
+
+.infosUser h3 {
+    color: white;
+    padding-left: 1%;
+}
+
+.calendar {
+    height: 3vh;
+}
+
+.dateInsc {
+    display: flex;
+    color: white;
+    padding: 1% 0 3% 1%;
+}
+
+.dateInsc p {
+    padding: 0.2% 0 0 1%;
+}

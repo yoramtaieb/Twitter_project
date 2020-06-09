@@ -1,0 +1,69 @@
+<%- include('../template/header.ejs') %>
+
+    <body>
+        <div class="formConnexion">
+            <nav>
+                <img src="../../public/img/Twitter_icon-icons.com_66803.png" height="50px" width="50px" alt="">
+                <h1 class="titre">Se connecter à Twitter</h1>
+                <div class="containError">
+                    <% if (error) {%>
+                        <p class="msgError">
+                            <%= error %>
+                        </p>
+                        <% } %>
+                </div>
+
+            </nav>
+
+            <form class='formCo' action="connexion/submit" method="POST">
+                <label for="mail" class="mailLabel">Email :</label>
+                <input type="email" name="username" id="mail">
+
+                <label for="password" class="mdpLabel">Mot de passe :</label>
+                <input type="password" name="password" id="password">
+
+                <button class="buttonInscription" type="submit">Connexion</button>
+            </form>
+
+
+            <footer>
+                <a href="#" class="hoverFooter">Mot de passe oublié ?</a><span class='tiretFooter'>  -  </span><a href="#" id="js-inscription" class="hoverFooter">S'inscrire sur Twitter</a>
+            </footer>
+        </div>
+
+        <div class="modale">
+            <nav>
+                <img src="../../public/img/Twitter_icon-icons.com_66803.png" height="50px" width="50px" alt="">
+                <h1>S'inscrire à Twitter</h1>
+                <button class="buttonClose"><img src="../../public/favIcon/times-solid.svg" height="25px" alt=""></button>
+            </nav>
+
+            <form class='formModale' action="inscription/submit" method="POST">
+                <label for="first_name" class="testLabel">Prénom :</label>
+                <input type="text" id="first_name" name="first_name" class='inputInsc'>
+
+                <label for="last_name" class="testLabel">Nom :</label>
+                <input type="text" id="last_name" name="last_name" class='inputInsc'>
+
+                <label for="birthday" class="testLabel">Date de naissance :</label>
+                <input type="date" id="birthday" name="birthday" class='inputInsc'>
+
+                <label for="genre" class="testLabel">Genre :</label>
+                <input type="text" id="genre" name="genre" class='inputInsc'>
+
+                <label for="city" class="testLabel">Ville :</label>
+                <input type="text" id="city" name="city" class='inputInsc'>
+
+                <label for="mail" class="testLabel">Email :</label>
+                <input type="email" name="mail" id="mail" class='inputInsc'>
+
+                <label for="password" class="testLabel">Mot de passe :</label>
+                <input type="password" name="password" id="password" class='inputInsc'>
+
+                <button class="buttonInscription" type="submit">Inscription</button>
+            </form>
+        </div>
+        <script src="../../public/js/modalInscription.js"></script>
+    </body>
+
+    </html>

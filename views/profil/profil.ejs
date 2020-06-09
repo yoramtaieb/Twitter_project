@@ -1,0 +1,61 @@
+<%- include('../template/header.ejs') %>
+    <div class="containerTotal">
+        <%- include('../template/nav.ejs') %>
+
+            <div class="actu">
+
+                <div class="headerProfil">
+                    <a href="../accueil"><img src="../../public/favIcon/arrow-left-solid.svg" alt="" class="arrow"></a>
+                    <h3>
+                        <%= user.first_name  %>
+                            <%= user.last_name  %>
+                    </h3>
+                </div>
+
+                <div class="backgroundProfil">
+                    <img src="../../public/img/profile.png" alt="" class="imgProf">
+                </div>
+
+                <div class="infoProfil">
+                    <div class="infosUser">
+                        <h3>
+                            <%= user.first_name  %>
+                                <%= user.last_name  %>
+                        </h3>
+                    </div>
+                    <div class="dateInsc">
+                        <img src="../../public/favIcon/calendar-alt-solid.svg" alt="" class="calendar">
+                        <p>Inscrit en mai 2020</p>
+                    </div>
+                </div>
+
+                <div class="containerTweet">
+                    <% for (tweet of tweets) { %>
+                        <div class="date">
+                            <h4>
+                                <%= user.first_name %>
+                                    <span class="separeName">-</span>
+                            </h4>
+                            <h5>
+                                <%= tweet.created_at.fromNow() %>
+                            </h5>
+                        </div>
+                        <div class="containName">
+                            <div class="containImgName">
+                                <a href="/profil"><img src="../../public/img/profile.png" alt="" class="imgProfile" /></a>
+                            </div>
+                            <div class="containPara">
+                                <p>
+                                    <%= tweet.tweet %>
+                                </p>
+                            </div>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+
+            <div class="containerSearch">
+                <input type="search" id="site-search" placeholder="Rechercher sur twitter" />
+            </div>
+    </div>
+    <%- include('../template/footer.ejs') %>

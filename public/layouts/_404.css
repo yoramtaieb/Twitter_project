@@ -1,0 +1,23 @@
+#notfound {
+    text-align: center;
+    color: white;
+}
+
+.notfound {
+    text-align: center;
+    color: #10AEEF;
+    padding-top: 6%;
+}
+
+.notfound404 {
+    color: #10AEEF;
+}
+
+.bird {
+    height: 50vh;
+    margin-bottom: 2%;
+}
+
+.title404 {
+    color: #10AEEF;
+}

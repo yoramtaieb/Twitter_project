@@ -1,0 +1,41 @@
+.modale {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    padding: 1.5% 0 0 0;
+    color: white;
+}
+
+.formModale label {
+    color: white;
+}
+
+.inputInsc {
+    background-color: #192834;
+}
+
+.testLabel {
+    padding: 2% 0 1% 0;
+}
+
+.buttonInscription {
+    margin: 3% 3% 0 3%;
+    padding: 1.5%;
+    border-radius: 20px;
+    border: none;
+    background-color: #1EA2F1;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonClose {
+    border: none;
+    margin-left: 39%;
+    cursor: pointer;
+    background: none;
+}
