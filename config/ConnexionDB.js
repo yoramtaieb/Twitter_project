@@ -4,7 +4,7 @@ let connexion = mysql.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.database,
-    //port: 8889,
+    port: 8889,
 });
 
 module.exports = connexion;
